@@ -12,6 +12,7 @@ public class Application {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext con = SpringApplication.run(Application.class, args);
+		System.out.println("rajasekhar");
 		PayslipGenrator ps=con.getBean(PayslipGenrator.class);
 		ps.start();
 	}
